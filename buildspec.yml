@@ -5,8 +5,9 @@ phases:
       nodejs: 18
     commands:
       - AWS_ACCOUNT_ID=302263063261
-      - IMAGE_REPO_NAME=avengers/uce-frontend
-      - IMAGE_TAG=latest
+      - REPOSITORY_NAME=avengers/uce-frontend
+      - echo "Source Version: $CODEBUILD_RESOLVED_SOURCE_VERSION"
+      - CODEBUILD_RESOLVED_SOURCE_VERSION=latest
       - echo Installing dependencies
       - npm install -g @angular/cli
   pre_build:

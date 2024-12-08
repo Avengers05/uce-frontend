@@ -6,7 +6,6 @@ phases:
     commands:
       - AWS_ACCOUNT_ID=302263063261
       - REPOSITORY_NAME=avengers/uce-frontend
-      - echo "Source Version: $CODEBUILD_RESOLVED_SOURCE_VERSION"
       - CODEBUILD_RESOLVED_SOURCE_VERSION=latest
       - echo Installing dependencies
       - npm install -g @angular/cli
